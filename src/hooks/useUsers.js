@@ -47,9 +47,6 @@ export const useUsers = () => {
   }, [fetchUsers, fetchDetail, error]);
 
   const handleClickNext = useCallback(() => {
-    console.log("Next");
-    console.log(users.length);
-    console.log(fetchDetail.currentPage);
     if (users && users.length > fetchDetail.currentPage) {
       dispatch({ type: USERS_SET_NEXT });
     } else {
@@ -58,7 +55,6 @@ export const useUsers = () => {
   }, [fetchUsers, fetchDetail, dispatch, users]);
 
   const handleClickPrev = useCallback(() => {
-    console.log("Back");
     dispatch({ type: USERS_SET_PREVIOUS });
   }, [dispatch]);
 

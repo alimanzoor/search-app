@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import StateContext from "../../../context/StateContext";
 import Container from "../../Layout/Container/Container";
 import IconBack from "../../../assets/images/icon-back.png";
@@ -30,10 +30,6 @@ const UserDetail = () => {
   const handleNavigateBack = () => {
     dispatch({ type: USER_RESET_SELECTED });
   };
-
-  useEffect(() => {
-    console.log("appState", selectedUser);
-  }, [selectedUser]);
 
   return (
     <div className={style.userDetail}>
