@@ -43,8 +43,9 @@ const UserList = ({ users }) => {
       const cleanedValue = value.trim().toLowerCase();
       const firstName = item.name.first.toLowerCase();
       const lastName = item.name.last.toLowerCase();
+      const fullName = `${firstName} ${lastName}`;
 
-      if (firstName.includes(cleanedValue) || lastName.includes(cleanedValue)) {
+      if (fullName.includes(cleanedValue)) {
         return item;
       }
       return false;
