@@ -1,0 +1,19 @@
+.navbar {
+  background: #fefefe;
+  box-shadow: 0 2px 8px rgb(80, 80, 80, 0.15);
+  padding: 1rem;
+  .title {
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    img {
+      display: block;
+      width: 34px;
+      border-radius: 4px;
+      margin-right: 8px;
+      flex-shrink: 0;
+      image-rendering: smooth;
+    }
+  }
+}
